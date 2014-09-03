@@ -1,4 +1,4 @@
-=== TWITCHRAIDS | Watch random streams together ===
+TWITCHRAIDS | Watch random streams together
 
 twitchraids.com
 
