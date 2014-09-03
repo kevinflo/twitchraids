@@ -1,11 +1,16 @@
 require 'rufus-scheduler'
 
-scheduler = Rufus::Scheduler.singleton
+scheduler = Rufus::Scheduler.new(:lockfile => ".rufus-scheduler.lock")
 
-scheduler.every '5m' do
-  Stream.get_sad_stream
+
+unless scheduler.down?
+  scheduler.every '5m' do
+    Stream.get_sad_stream
+  end
 end
 
-scheduler.every '10s' do
-  Stream.ping
+unless scheduler.down?
+  scheduler.every '10s' do
+    Stream.ping
+  end
 end
