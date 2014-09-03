@@ -1,0 +1,7 @@
+$('#poop').replaceWith("<%= escape_javascript(render @stream) %>")
+var expiration = new Date(<%= (@stream.created_at + 5.minutes + 10.seconds).to_i * 1000 %>);
+$('#defaultCountdown').countdown({until: expiration, format:'MS', compact:'true'});
+setTimeout(function(){
+      updateStream("<%= @stream.channel %>")
+      }, 30000)
+$('#last-8').replaceWith("<%= escape_javascript(render 'last8') %>");

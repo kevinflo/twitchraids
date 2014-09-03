@@ -1,0 +1,29 @@
+<%= render @stream %> 
+<br>
+<br>
+<%= render 'last8' %>
+
+<script type="text/javascript">
+  $(function(){
+    var current = "<%= @stream.channel %>"
+    var expiration = new Date();
+    var expiration = new Date(<%= (@stream.created_at + 5.minutes + 10.seconds).to_i * 1000 %>);
+    $('#defaultCountdown').countdown({until: expiration, format:'MS', compact:'true'});
+    setTimeout(function(){
+      updateStream(current)
+      }, 30000)
+  });
+
+  function updateStream(current) {
+    $.get('stream.json', function( data ){
+      if (data.channel !== current) {
+        $.get('stream.js');
+      } else {
+        $("#current-viewers").html(data.current_viewers);
+        setTimeout(function(){
+          updateStream(data.channel)
+        }, 30000)
+      }
+    });
+  }
+</script>
