@@ -2,7 +2,7 @@
 
 twitchraids.com
 
-Twitchraids is a stream randomizer.  The app pulls a random low viewcount stream every 5 minutes and everyone on the site is sent to that stream at once.
+Twitchraids is a twitch.com stream randomizer.  The app pulls a random low viewcount stream every 5 minutes and everyone on the site is sent to that stream at once.
 
 I made this as a single-day project just for fun.  Most of the code is super janky.  Nothing is tested.  Just thought I'd put it up on github in case anyone wants to do something with it.
 
