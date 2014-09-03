@@ -1,28 +1,9 @@
-== README
+=== TWITCHRAIDS | Watch random streams together ===
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+twitchraids.com
 
-Things you may want to cover:
+Twitchraids is a stream randomizer.  The app pulls a random low viewcount stream every 5 minutes and everyone on the site is sent to that stream at once.
 
-* Ruby version
+I made this as a single-day project just for fun.  Most of the code is super janky.  Nothing is tested.  Just thought I'd put it up on github in case anyone wants to do something with it.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Contact me @kevinflo if you have questions.  Happy raiding!
