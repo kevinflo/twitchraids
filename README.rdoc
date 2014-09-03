@@ -6,4 +6,6 @@ Twitchraids is a twitch.com stream randomizer.  The app pulls a random low viewc
 
 I made this as a single-day project just for fun.  Most of the code is super janky.  Nothing is tested.  Just thought I'd put it up on github in case anyone wants to do something with it.
 
+There are soooo many features that could be added to this to improve it, so have at it!
+
 Contact me @kevinflo if you have questions.  Happy raiding!
