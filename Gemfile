@@ -33,7 +33,7 @@ gem 'jquery-countdown-rails', '2.0.0'
 gem 'font-awesome-rails', '4.0.3.1'
 
 group :development do
-  gem 'spring'
+  # gem 'spring'
   gem 'sqlite3', '1.3.8'
   # Use Capistrano for deployment
   gem 'capistrano', '3.2.1'

@@ -25,3 +25,4 @@
 /Capfile
 /config/unicorn.rb
 /config/unicorn_init.sh
+# /.rufus-scheduler.lock
